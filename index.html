@@ -17,14 +17,30 @@
 				<!-- Intro -->
 					<div class="background-image">
 					<div id="intro">
-						<h1>Erick De Rossi Faria</h1>
-						<p>Sou, atualmente, estudante de estatística no IME-USP.<br />
-						   Tenho interesse em aprimorar minhas habilidades com análise de dados e Machine Learning.
-						</p>
+						<span class="text first-text">I'm a</span>
+        					<span class="text sec-text">Freelancer</span>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
 					</div>
+					<script>
+						const text = document.querySelector(".sec-text");
+
+        					const textLoad = () => {
+            						setTimeout(() => {
+                						text.textContent = "Freelancer";
+            						}, 0);
+            						setTimeout(() => {
+                						text.textContent = "Blogger";
+            						}, 4000);
+            						setTimeout(() => {
+                						text.textContent = "YouTuber";
+            						}, 8000); //1s = 1000 milliseconds
+        					}
+
+        					textLoad();
+        					setInterval(textLoad, 12000);
+    					</script>
 					</div>	
 
 				<!-- Header -->
@@ -145,6 +161,39 @@
 			background-repeat: no-repeat;
 			background-position: center;
 			height= 100vh;
+		}
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+		.intro{
+			width: 246px;
+    			overflow: hidden;
+		}
+		.intro .text{
+    			position: relative;
+    			color: #4070F4;
+    			font-size: 30px;
+    			font-weight: 600;
+		}
+		.intro .text.first-text{
+    			color: #FFF;
+		}
+		.text.sec-text:before{
+    		content: "";
+    		position: absolute;
+    		top: 0;
+    		left: 0;
+    		height: 100%;
+    		width: 100%;
+    		background-color: #010718;
+    		border-left: 2px solid #4070F4;
+    		animation: animate 4s steps(12) infinite;
+		}
+		@keyframes animate{
+    			40%, 60%{
+        			left: calc(100% + 4px);
+    			}
+    			100%{
+        			left: 0%;
+    			}
 		}
 	</style>
 </html>
