@@ -27,7 +27,7 @@
 					</div>
 					</div>
 			<div class="container">
-        			<span class="text first-text">Eu sou</span>
+        			<span class="text first-text">Eu</span>
         			<span class="text sec-text"> Estudante</span>
     			</div>
 
@@ -36,18 +36,18 @@
 
         			const textLoad = () => {
             				setTimeout(() => {
-                				text.textContent = "Estudante";
+                				text.textContent = "sou Estudante";
             				}, 0);
             				setTimeout(() => {
-                				text.textContent = "Estatístico";
-            				}, 4100);
+                				text.textContent = "sou Estatístico";
+            				}, 4200);
             				setTimeout(() => {
-                				text.textContent = "'Data Scientist'";
-            				}, 8800); //1s = 1000 milliseconds
+                				text.textContent = "sei Python|DS|ML";
+            				}, 9000); //1s = 1000 milliseconds
         			}			
 
         			textLoad();
-        			setInterval(textLoad, 13000);
+        			setInterval(textLoad, 13200);
     			</script> 
 
 				<!-- Header -->
@@ -197,8 +197,7 @@
     			width: 100%;
 			background-color: #010718;
     			border-left: 5px solid #4070F4;
-    			animation: animate 4s steps(12) infinite;
-			blink 500ms steps(12) infinite;
+    			animation: animate 4s steps(15) infinite;
 		}
 		@keyframes animate{
     			40%, 60%{
