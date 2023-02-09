@@ -10,6 +10,53 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+		<style>
+		.background-image{
+			background-image: url("https://ericktherossi.github.io/images/back0D0208.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			height= 100vh;
+		}
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+		.container{
+			right:450px;
+     			top:100px;
+     			background-color: #0D0208;
+     			width: 350px;
+     			position: absolute;
+    			overflow: hidden;
+		}
+		.container .text{
+    			position: relative;
+    			color: #008F11;
+    			font-size: 30px;
+    			font-weight: 600;
+		}
+		.container .text.first-text{
+			margin-left: 5px;
+    			color: #003B00;
+		}
+		.text.sec-text:before{
+    			content: "";
+    			position: absolute;
+    			top: 0;
+    			left: 0;
+    			height: 100%;
+    			width: 100%;
+			background-color: #0D0208;
+    			border-left: 2px solid #00FF41;
+    			animation: animate 4s steps(15) infinite;
+		}
+		@keyframes animate{
+    			40%, 60%{
+        			left: calc(100% + 4px);
+    			}
+    			100%{
+        			left: 0%;
+    			}
+		}
+	</style>
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
@@ -165,51 +212,4 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
-	<style>
-		.background-image{
-			background-image: url("https://ericktherossi.github.io/images/back0D0208.png");
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center;
-			height= 100vh;
-		}
-		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
-		.container{
-			right:450px;
-     			top:100px;
-     			background-color: #0D0208;
-     			width: 350px;
-     			position: absolute;
-    			overflow: hidden;
-		}
-		.container .text{
-    			position: relative;
-    			color: #008F11;
-    			font-size: 30px;
-    			font-weight: 600;
-		}
-		.container .text.first-text{
-			margin-left: 5px;
-    			color: #003B00;
-		}
-		.text.sec-text:before{
-    			content: "";
-    			position: absolute;
-    			top: 0;
-    			left: 0;
-    			height: 100%;
-    			width: 100%;
-			background-color: #0D0208;
-    			border-left: 2px solid #00FF41;
-    			animation: animate 4s steps(15) infinite;
-		}
-		@keyframes animate{
-    			40%, 60%{
-        			left: calc(100% + 4px);
-    			}
-    			100%{
-        			left: 0%;
-    			}
-		}
-	</style>
 </html>
